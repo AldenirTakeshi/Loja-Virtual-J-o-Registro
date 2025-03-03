@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Virtual</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Loja Virtual</h1>
+
+    <!-- Adicionar Produto -->
+    <div>
+      <input id="nome" type="text" placeholder="Nome do produto" />
+      <input id="preco" type="number" placeholder="Preço" />
+      <input id="quantidade" type="number" placeholder="Quantidade" />
+      <button onclick="adicionarProduto()">Adicionar Produto</button>
+    </div>
+
+    <h2>Estoque</h2>
+    <ul id="estoque"></ul>
+
+    <!-- Registrar Compra -->
+    <h2>Registrar Compra</h2>
+    <div>
+      <input id="cliente" type="text" placeholder="Nome do cliente" />
+      <select id="produtoCompra"></select>
+      <input id="quantidadeCompra" type="number" placeholder="Quantidade" />
+      <button onclick="registrarCompra()">Registrar Compra</button>
+    </div>
+
+    <h2>Registros de Compras</h2>
+    <ul id="registros"></ul>
+
+    <script src="script.js"></script>
+  </body>
+</html>
